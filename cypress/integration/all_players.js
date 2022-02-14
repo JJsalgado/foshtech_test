@@ -15,7 +15,7 @@ describe('all players', () => {
             .should('equal', 200);
     })
 
-    it('verify the request returns the correct number of ', () => {
+    it('verify the request returns the correct number of entries', () => {
         cy.get('@all_players').then((response)=>{
             expect(response.body.meta.total_count).equal(3755)
     })
